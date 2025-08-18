@@ -1,0 +1,736 @@
+﻿Especificación de requisitos de software
+
+
+Proyecto:  
+
+
+
+
+
+
+
+
+
+
+
+
+MI PROYECTO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+2025
+	
+
+Instrucciones para el uso de este formato
+
+
+Este formato es una plantilla tipo para documentos de requisitos del software.
+
+
+Está basado y es conforme con el estándar IEEE Std 830-1998.
+
+
+Los textos en color azul son indicaciones que deben eliminarse y, en su caso, sustituirse por los contenidos descritos en cada apartado.
+
+
+
+
+Incorporaremos normas APA 
+
+
+Consigna
+	Descripción
+	 
+ Carátula
+	La primera hoja del informe ser el título y los nombres de los autores del proyecto.  Utilizando el membrete correspondiente
+Tipografía según normas APA
+El Título: claro, concreto y atractivo. Se puede agregar un subtítulo que se acerque al objetivo de indagación.
+	Índice
+	Numeración ordenada de los contenidos del trabajo.
+	Resumen
+	Cada resumen deberá contener:
+Título del trabajo:
+Tecnicatura Superior:
+Cohorte:
+Área:         
+Subárea:
+El Resumen deberá describir en forma sintética la situación que motivó la indagación y todos los pasos seguidos en su desarrollo y conclusión. El resumen sirve para dar al lector una idea clara y completa sobre el trabajo. Su extensión no debe exceder las 200 palabras.
+	Introducción
+	En ella se exponen los antecedentes, marco teórico o referencial y razones que motivaron el trabajo, situación problemática, o precisión del problema o necesidad, los objetivos e hipótesis. Debe quedar explícita la vinculación del proyecto presentado con los contenidos curriculares.
+	Situación problemática
+	Motivos por los cuales se opta por la realización de este proyecto. Qué demanda o vacancia cubre o mejora.
+	Desarrollo
+	Actividades llevadas a cabo durante la indagación, tecnologías utilizadas, diseño de las experiencias, recolección y elaboración de los datos, métodos empleados.
+Planificación y ejecución de proyectos tecnológicos.
+	 Resultados obtenidos
+	Presentación de los resultados
+	Conclusiones
+	Constituyen las respuestas que propone el indagador para el problema con los datos recogidos, resultados obtenidos y propuesta teórica elaborada o aplicada. Deben redactarse en forma sencilla, exhibiendo concordancia con las hipótesis enunciadas, necesidades y objetivos planteados.
+	Proyecciones (opcional)
+	Como proyección pueden surgir nuevos problemas o interrogantes sobre la base de la investigación realizada.
+ 
+	Viabilidad/Presupuesto
+	 
+	Campos de acción
+	 
+	Bibliografía consultada
+	Citar: Apellido, nombre del autor/a, título del libro/revista, lugar, editorial, año de edición.
+	
+
+
+
+
+
+
+
+Ficha del documento
+
+
+
+
+Fecha
+	Revisión
+	Autor
+	Referencia de Cambio
+	04/06/2025
+	1
+	Integrante …..
+	Se comienza la construcción del doc
+	20/06/2025
+	2
+	Integrante …..
+	Se agrega RF y RNF
+	
+
+	
+
+	Integrante …..
+	Anexo I
+	29/10/2025
+	4
+	Integrante …..
+	Revisión apartado 3.1, anexos de diagramas
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contenido
+FICHA DEL DOCUMENTO        3
+CONTENIDO        4
+1        INTRODUCCIÓN        6
+1.1        Propósito        6
+1.2        Alcance        6
+1.3        Personal involucrado        6
+1.4        Definiciones, acrónimos y abreviaturas        7
+1.5        Referencias        7
+1.6        Resumen        7
+2        DESCRIPCIÓN GENERAL        7
+2.1        Perspectiva del producto        7
+2.3        Características de los usuarios        8
+2.4        Restricciones y supuestos        9
+3        REQUISITOS ESPECÍFICOS        9
+3.2        Product Backlog        17
+3.2.1        Product Backlog        17
+3.3        Sprints        19
+3.3.1        Sprint 1        19
+3.3.2        Spint 2        20
+
+
+
+
+________________
+1. Introducción
+
+
+        Este documento es una Especificación de Requisitos Software (ERS) para el desarrollo de un sistema de lavados de vehículos a domicilio. Su intención es dejar en claro las bases del funcionamiento del sistema incluyendo requerimientos necesarios para su comprensión.
+La estructura de documentación, se basa en las directrices dadas por el estándar IEEE, recomendada para Especificaciones de Requisitos Software, utilizada para garantizar la coherencia y calidad de la documentación.
+ 
+
+
+   1. Propósito
+
+
+        El presente documento tiene como objetivo definir los requisitos funcionales y no funcionales, para el desarrollo de un sistema que resolverá una gran necesidad detectada, de una forma que agilizará la vida de los clientes, brindándoles opciones varias como lo son la carga y gestión de vehículos, registro de clientes y administradores, visualización y cancelación de turnos, procesamiento de pagos, entre otras.
+
+
+   2. Alcance
+El sistema estará orientado de forma que al usuario le resulte sencillo navegar para poder conocer los múltiples servicios ofrecidos, pudiendo así mismo contratar el que le parezca necesario.
+Dentro de su alcance, algunas de sus funcionalidades son:
+* Gestión de empleados, que pueden aceptar turnos y marcar servicios como finalizados. Todo el sistema funciona por consola y está pensado para ofrecer una experiencia clara, ordenada y útil para clientes y trabajadores.
+* Solicitud de servicios de lavado eligiendo tipo de servicio, ubicación, fecha y hora.
+* Visualización y cancelación de turnos pendientes.
+* Inicio de sesión para acceder al perfil y las funciones del sistema.
+Este, estará disponible tanto para los clientes como para los administradores, dependiendo sea uno u otro tendrá diferentes tipos de opciones dentro del mismo espacio.
+   3. Personal involucrado
+
+
+Nombre
+	Abigail Yazmin Picone Ambrosioni
+	Rol
+	Scrum Master
+	Categoría Profesional
+	Coordinadora
+	Responsabilidad
+	Organización del equipo, tareas y seguimiento
+	Información de contacto
+	abigailpicone@gmail.com
+	
+
+Nombre
+	Irina Pirles
+	Rol
+	Desarrolladora
+	Categoría Profesional
+	Desarrolladora
+	Responsabilidad
+	Programar el sistema, cumplir las tareas impuestas 
+	Información de contacto
+	fridaandrade1313@gmail.com
+	
+
+
+
+Nombre
+	Astrid Ana Luppi
+	Rol
+	Desarrolladora
+	Categoría Profesional
+	Desarrolladora
+	Responsabilidad
+	Programar el sistema, cumplir las tareas impuestas 
+	Información de contacto
+	astrita1970@gmail.com
+	
+
+Nombre
+	Vanessa Marcela Villanueva Casini
+	Rol
+	Desarrolladora
+	Categoría Profesional
+	Desarrolladora
+	Responsabilidad
+	Programar el sistema, cumplir las tareas impuestas 
+	Información de contacto
+	profe.marcelavillanueva@gmail.com
+	
+
+Nombre
+	Mauricio Nahuel Pucheta
+	Rol
+	Desarrollador
+	Categoría Profesional
+	Desarrollador
+	Responsabilidad
+	Programar el sistema, cumplir las tareas impuestas 
+	Información de contacto
+	mauriciopucheta21@gmail.com
+	
+
+Nombre
+	Ariel Orlando Fernandez
+	Rol
+	Desarrollador
+	Categoría Profesional
+	Desarrollador
+	Responsabilidad
+	Programar el sistema, cumplir las tareas impuestas 
+	Información de contacto
+	lic.arielfernandez.hys@gmail.com
+	
+
+
+
+   4. Definiciones, acrónimos y abreviaturas
+
+
+Nombre
+	Descripción
+	Usuario
+	Persona que usará el sistema para gestionar procesos
+	SIS-I
+	Sistema de Información Web para la Gestión de Procesos Administrativos y Académicos
+	ERS
+	Especificación de Requisitos Software
+	RF
+	Requerimiento Funcional
+	RNF
+	Requerimiento No Funcional
+	Administrador
+	Usuario con permisos para gestionar el sistema, asignar tareas y administrar pedidos.
+	
+
+   5. Referencias
+
+
+Titulo del Documento
+	Referencia
+	Standard IEEE 830 - 1998
+	IEEE 
+	
+
+   6. Resumen
+El documento está dividido en las siguientes secciones:
+* Introducción: Define el propósito del documento, su estructura, términos relevantes, su propósito y alcance.
+* Desarrollo: Nos brinda una visión general del producto, incluyendo datos sobre posibles usuarios y restricciones del sistema.
+* Requisitos específicos: Habla sobre múltiples tipos de gestiones, consultas, reportes y requerimientos no funcionales que abarca tanto seguridad, disponibilidad, compatibilidad y otros aspectos clave.
+
+
+2. Descripción general
+
+
+   7. Perspectiva del producto
+El sistema AquaMóvil será un producto diseñado para trabajar en entornos Web y Móvil, lo que permitirá su utilización de forma rápida y eficaz. Estará orientado a la gestión integral de servicios de lavado de autos a domicilio, facilitando la interacción entre clientes, administradores y empleados lavacoches.
+El sistema se apoyará en una arquitectura cliente-servidor, con interfaz accesible mediante navegadores y dispositivos móviles, y con persistencia de datos en una base de datos relacional. Esto permitirá:
+* Registrar usuarios con distintos roles.
+
+* Gestionar pedidos de servicio.
+
+* Administrar pagos y generar liquidaciones para los operarios.
+
+* Monitorear el estado de cada solicitud en tiempo real.
+
+
+
+   8. Características de los usuarios
+Tipo de usuario
+	Administrador. Usuario administrador.
+	Formación
+	Manejo básico de herramientas informáticas y de gestión.
+	Actividades
+	   * Control y manejo del sistema en general. 
+   * Alta, baja y modificación de usuarios. 
+   * Control y manejo del sistema en general. 
+   * Supervisión de pedidos y asignación de empleados.
+   *  Gestión de reportes y estadísticas de uso.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipo de usuario
+	Cliente.  Usuario estándar
+	Formación
+	Manejo básico de entornos web o aplicaciones móviles.
+
+	Actividades
+	      * Registrarse e iniciar sesión en la plataforma.
+      * Solicitar un servicio de lavado de autos a domicilio.
+      * Seleccionar tipo de vehículo y servicio (básico, premium, etc.).
+      * Especificar detalles adicionales y método de pago.
+Consultar el estado de sus pedidos.
+        
+
+
+	
+
+
+
+Tipo de usuario
+	Empleado lavacoches.  Usuario estándar
+	Formación
+	Manejo básico de entornos web o aplicaciones móviles.
+
+	Actividades
+	         * Consultar pedidos asignados.
+         * Actualizar el estado del servicio (pendiente, en proceso, listo, entregado).
+         * Confirmar la finalización del trabajo.
+         * Visualizar información de liquidaciones o pagos pendientes.
+
+	
+
+Tipo de usuario
+	Visitante. Usuario ocasional, no requiere login
+	Formación
+	Manejo básico de herramientas informáticas y de gestión.
+	Actividades
+	            * Observar e indagar información general del servicio.
+            * Acceder a descripciones, planes y tarifas.
+            * No posee acceso a funcionalidades críticas hasta registrarse.
+
+
+	
+
+
+
+
+
+            9. Restricciones
+
+
+.La interfaz estará disponible principalmente para uso con Internet (Web responsive y aplicación móvil).
+
+            * El sistema podrá evolucionar hacia una versión de escritorio en fases posteriores.
+
+            * Lenguajes y tecnologías en uso:
+
+               * Frontend: HTML5, CSS3, JavaScript.
+
+               * Backend: Python (Flask/Django) o Node.js.
+
+               * Base de Datos: MySQL.
+
+               * Otras tecnologías: API de pagos (tarjeta de crédito, transferencia).
+
+
+
+
+
+
+
+                  3. Requisitos específicos
+Requerimientos Funcionales
+                  1. Gestión de usuarios
+
+                     * RF1. El sistema permitirá el registro de nuevos usuarios (cliente, empleado, administrador).
+
+                     * RF2. El sistema permitirá a los administradores gestionar (alta, baja, modificación) usuarios.
+
+                     * RF3. El sistema validará credenciales de inicio de sesión con seguridad (usuario y contraseña).
+
+                        2. Gestión de pedidos
+
+                           * RF4. El cliente podrá registrar un pedido de servicio de lavado especificando: tipo de vehículo, tipo de servicio y observaciones.
+
+                           * RF5. El empleado podrá consultar los pedidos asignados y actualizar su estado.
+
+                           * RF6. El administrador podrá supervisar todos los pedidos en curso.
+
+                              3. Gestión de pagos
+
+                                 * RF7. El cliente podrá abonar el servicio mediante tarjeta de crédito o transferencia bancaria.
+
+                                 * RF8. El sistema generará automáticamente la liquidación correspondiente para el empleado una vez finalizado el servicio.
+
+                                    4. Gestión de estados y notificaciones
+
+                                       * RF9. El sistema permitirá actualizar los estados del pedido: pendiente, en proceso, listo, entregado.
+
+                                       * RF10. El sistema enviará notificaciones al cliente sobre el progreso de su pedido.
+
+                                          5. Consultas y reportes
+
+                                             * RF11. El administrador podrá generar reportes sobre usuarios, pedidos y pagos.
+
+                                             * RF12. El cliente podrá consultar su historial de pedidos.
+
+                                             * RF13. El empleado podrá visualizar su historial de servicios realizados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Requerimientos No Funcionales (revisar y validar)
+1. Rendimiento
+El sistema Aquamóvil está desarrollado como una aplicación de línea de comandos, lo que permite tiempos de respuesta inmediatos en entornos locales. La autenticación se realiza mediante comparación directa de credenciales en estructuras internas, sin acceso a bases de datos externas ni procesos asincrónicos.
+                                                * Tiempo de respuesta: El sistema responde a entradas del usuario en menos de 2 segundos en condiciones normales, validado mediante pruebas manuales en CLI.
+                                                * Autenticación: El proceso de login se completa en menos de 3 segundos, gracias a la validación directa en estructuras de datos.
+                                                * Concurrencia: Aunque no se ha implementado concurrencia real, el diseño modular permite escalar hacia múltiples sesiones simultáneas en futuras versiones.
+
+________________
+
+
+2. Usabilidad
+La interfaz de Aquamóvil está diseñada para ser clara y funcional en entornos de línea de comandos. Cada rol tiene un menú específico, y las opciones están numeradas y acompañadas de mensajes descriptivos.
+                                                   * Interfaz por rol: Los usuarios acceden a menús diferenciados según su tipo (Cliente, Empleado, Administrador), con opciones específicas para cada perfil.
+                                                   * Validaciones: Todos los campos requeridos son validados. Se implementan mensajes de error específicos como “campo vacío” o “formato incorrecto”.
+                                                   * Registro: El sistema permite hasta 9 intentos de registro antes de bloquear temporalmente el proceso, con retroalimentación en cada paso.
+                                                   * Navegación: El flujo de interacción es secuencial e intuitivo, con confirmaciones antes de operaciones críticas.
+2.4 Restricciones
+Dicho desarrollo debe basarse en tecnologías open-source como por ejemplo motor de BD MySQL, Python, HTML5, CSS3, JavaScript (ES6 +) y frameworks como Django, etc. Como primer MVP, el sistema, en su primera entrega, estará disponible únicamente en idioma español, con posibilidad de traducción a través de Google Translate. Para la accesibilidad del mismo, la aplicación debe ser accesible desde navegadores modernos, como ser, Chrome, Firefox, Edge, Opera, Brave, entre otros, haciéndolo versátil y que por ende, esté disponible para las dos versiones anteriores disponibles de cada navegador. En cuanto la UX (experiencia de usuario) los tiempos de respuesta de la aplicación no deben superar los 3 segundos bajo carga normal de usuarios concurrentes (peticiones GET, POST, etc). 
+En todas las etapas de desarrollo del sistema, se deberá cumplir con la normativa de protección de datos vigente (Ley 25.326 en Argentina, Ley de Protección de Datos Personales) a través de sistemas seguros como la autenticación doble factor, cifrado de datos, encriptación y demás, logrando así, una correcta seguridad en los datos de carácter privados y sensibles de los usuarios.
+En cuanto a la entrega del software pertinente, el mismo no deberá superar el plazo de entrega de X meses acordado y definido por y con el cliente. Durante la etapa de desarrollo, se realizarán integraciones específicas definidas por el cliente, tal como ser, integraciones con pasarelas de pago (ejemplo, MercadoPago).
+Los reportes de lavados y facturación deben generarse en formato PDF y/o Excel, según lo solicitado por el cliente. Por otro lado, a nivel de seguridad, la autenticación de usuarios debe realizarse mediante usuario y contraseña, sin integración a terceros en la primera versión. Finalmente, la aplicación debe registrar la información de personal, vehículos y lavados sin integrarse a sistemas externos.
+2.4 Supuestos
+En cuanto a la usabilidad del sistema, se asume que los usuarios finales dispondrán de una conexión a internet estable para que tengan una experiencia de usuario fluida. En cuanto a la puesta en producción, se asume que el volumen inicial de los mismos (usuarios) no superará los 100 usuarios concurrentes (tiempo real). 
+En tiempos de utilización del sistema, consideraremos que los datos ingresados por los usuarios serán válidos y completos (ejemplo, nombre de patente) ya que, el sistema solo realizará validaciones básicas. Para el despliegue y alojamiento del proyecto, el servidor, dominio y hosting será optado / provisto por el cliente, pero se le podrá brindar asesoramiento si así lo desea. 
+Estimamos que el volumen de datos inicial no superará los 5.000 registros de lavados por mes y que los usuarios administrativos mantendrán actualizada la información de vehículos y clientes en el sistema. Consideramos que el sistema, en esta primera entrega, será utilizado en una sola y única sucursal, asumiendo también que el personal administrativo gestionará manualmente situaciones excepcionales como pérdidas de tickets, lavados no registrados, comunicación entre diferentes sucursales para hacer una puesta en común de los reportes, etc.
+Asumimos que el personal de atención al cliente (personal a cargo del cliente y el cliente en sí) recibirá capacitación para administrar el sistema de forma eficiente y así evitar malentendidos futuros, así como los mismos (usuarios finales) deberán disponer de navegadores actualizados (versiones estables) para prevenir inconsistencias.
+Finalmente, en cuanto a integraciones, como por ejemplo la pasarela de pago, se mantendrá una operatividad continua, es decir, no se contemplarán caídas prolongadas). 
+
+
+
+________________
+
+
+3. Seguridad
+La seguridad en Aquamóvil se implementa a nivel lógico, con restricciones de acceso y control de autenticación. Aunque no se utiliza cifrado aún, el diseño contempla su incorporación.
+                                                   * Contraseñas: Se exige una longitud mínima de 8 caracteres. La validación incluye la presencia de letras y números.
+                                                   * Control de acceso: Los usuarios no registrados no pueden acceder al sistema. Se limita el login a 3 intentos consecutivos por sesión.
+                                                   * Protección de administrador: El sistema impide que un administrador elimine su propia cuenta, preservando el control del sistema.
+                                                   * Cifrado pendiente: Actualmente las contraseñas se almacenan en texto plano, pero se ha planificado la implementación de hash con bcrypt o hashlib.
+
+
+
+________________
+
+
+4. Disponibilidad
+La disponibilidad del sistema Aquamóvil se define como la capacidad del sistema para mantenerse operativo durante la mayor parte del tiempo, minimizando interrupciones y garantizando la protección de los datos. Dado que el sistema se ejecuta en entornos locales sin dependencia de servicios externos, se establecen metas de estabilidad y respaldo que pueden ser verificadas mediante logs y scripts de mantenimiento.
+                                                   * Disponibilidad mensual:  El sistema deberá estar disponible al menos el 95% del tiempo durante el mes. Esta meta se fundamenta en la estabilidad observada en entornos locales, donde no se prevén fallos críticos ni dependencias de terceros.
+                                                   * Copias de seguridad automáticas: El sistema deberá contar con copias de seguridad automáticas diarias para evitar pérdida de información. Aunque esta funcionalidad aún no ha sido implementada, se proyecta incorporar scripts que exporten los datos del sistema a archivos .json o .csv cada 24 horas, almacenándolos en una ubicación segura dentro del entorno local.
+
+________________
+
+
+5. Mantenibilidad y Escalabilidad
+El código está organizado en módulos y clases por tipo de usuario, lo que facilita su extensión y mantenimiento.
+                                                      * Modularización: Clases como Cliente, Empleado, Administrador y Direcciones_empleado encapsulan funcionalidades específicas.
+                                                      * Funciones descriptivas: Los métodos tienen nombres claros como validar_datos(), mostrar_menu(), registrar_usuario(), lo que facilita su comprensión.
+                                                      * Documentación: Se han incluido comentarios explicativos en el código. Se recomienda formalizar la documentación con docstrings en formato Google o NumPy.
+
+________________
+
+
+6. Compatibilidad
+Aquamóvil está desarrollado en Python 3.10, sin dependencias externas, lo que permite su ejecución en múltiples plataformas.
+                                                         * Entorno: Compatible con cualquier sistema que soporte Python 3.10 o superior.
+                                                         * Sistemas operativos: Probado en Windows y Linux. Se proyecta compatibilidad con macOS.
+                                                         * Dependencias: No se utilizan librerías externas, lo que simplifica la instalación y despliegue.
+
+
+
+
+Product Backlog
+
+
+
+
+Escribir todas las historias de Usuarios encontradas para el proyecto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sprints.
+
+
+N° de sprint
+	00
+	Sprint Backlog
+	US01
+US02
+TK01
+TK02
+-
+-
+-
+
+
+
+
+
+
+	Responsabilidades 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Calendario
+	
+
+
+
+
+
+
+
+
+
+	Inconvenientes: 
+        
+	
+
+
+
+N° de sprint
+	01
+	Sprint Backlog
+	US10
+US11
+US12
+-
+-
+-
+
+
+
+
+
+
+	Responsabilidades 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Calendario
+	
+
+
+
+
+
+
+
+
+
+	Inconvenientes: 
+        
+	
+
+
+
+
+
+N° de sprint
+	02
+	Sprint Backlog
+	US20
+US21
+US22
+-
+-
+-
+
+
+
+
+
+
+	Responsabilidades 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+Realizar la carga de la tabla teniendo en cuenta todos los sprint que se realicen para este espacio curricular.
+
+
+
+
+
+
+
+
+ANEXO I
+DER link
+FIGMA / CANVA u otro opcional (Link permiso lectura)
